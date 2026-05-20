@@ -32,7 +32,7 @@ function PersonRow({ person }: { person: Person }) {
   return (
     <div className="flex h-20 w-fit min-w-[260px] items-center gap-4">
       <img
-        src="/img.png"
+        src={`${import.meta.env.BASE_URL}img.png`}
         alt={person.name}
         className={
           'h-20 w-20 shrink-0 rounded-full object-cover ' +
